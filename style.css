@@ -256,10 +256,9 @@
     left: 50%;
     margin: 2em 0;
 }
-.entry .gallery:before,
-.entry .gallery:after { content: " "; display: table; }
-.entry .gallery:after { clear: both; }
-
+.entry .gallery + * {
+    clear: left;
+}
 .entry .gallery-item {
     position: relative;
     float: left;
